@@ -1,0 +1,57 @@
+[
+  {
+    "file": "/images/demo/classroom.webp",
+    "source": "https://images.unsplash.com/photo-1509062522246-3755977927d7?fm=webp&fit=crop&w=1800&q=82",
+    "kind": "Unsplash stock photograph; demo use, not the actual school"
+  },
+  {
+    "file": "/images/demo/campus.webp",
+    "source": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?fm=webp&fit=crop&w=1200&q=82",
+    "kind": "Unsplash stock photograph; demo use, not the actual school"
+  },
+  {
+    "file": "/images/demo/library.webp",
+    "source": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?fm=webp&fit=crop&w=1000&q=82",
+    "kind": "Unsplash stock photograph; demo use, not the actual school"
+  },
+  {
+    "file": "/images/demo/sports.webp",
+    "source": "https://images.unsplash.com/photo-1546519638-68e109498ffc?fm=webp&fit=crop&w=1000&q=82",
+    "kind": "Unsplash stock photograph; demo use, not the actual school"
+  },
+  {
+    "file": "/images/demo/art.webp",
+    "source": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?fm=webp&fit=crop&w=1000&q=82",
+    "kind": "Unsplash stock photograph; demo use, not the actual school"
+  },
+  {
+    "file": "/images/demo/science.webp",
+    "source": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?fm=webp&fit=crop&w=1200&q=82",
+    "kind": "Unsplash stock photograph; demo use, not the actual school"
+  },
+  {
+    "file": "/images/demo/teacher-dilnoza.webp",
+    "source": "https://images.unsplash.com/photo-1580489944761-15a19d654956?fm=webp&fit=crop&w=800&q=82",
+    "kind": "Unsplash stock photograph; demo use, not the actual school"
+  },
+  {
+    "file": "/images/demo/teacher-aziz.webp",
+    "source": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?fm=webp&fit=crop&w=800&q=82",
+    "kind": "Unsplash stock photograph; demo use, not the actual school"
+  },
+  {
+    "file": "/images/demo/teacher-nargiza.webp",
+    "source": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=webp&fit=crop&w=800&q=82",
+    "kind": "Unsplash stock photograph; demo use, not the actual school"
+  },
+  {
+    "file": "/images/demo/reading.webp",
+    "source": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?fm=webp&fit=crop&w=1000&q=82",
+    "kind": "Unsplash stock photograph; demo use, not the actual school"
+  },
+  {
+    "file": "/images/demo/students.webp",
+    "source": "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?fm=webp&fit=crop&w=1200&q=82",
+    "kind": "Unsplash stock photograph; demo use, not the actual school"
+  }
+]
