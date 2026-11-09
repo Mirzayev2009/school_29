@@ -12,6 +12,12 @@ The exact official long-form school name, phone number, office hours, admissions
 
 Search indexing is enabled in `src/app/layout.tsx`.
 
+## SEO setup
+
+`src/lib/seo.ts` is the source for the canonical site URL, page title, description, and school structured data. The current site URL defaults to `https://samarkandcityschool29.vercel.app`. Set `NEXT_PUBLIC_SITE_URL` to the full production origin in the deployment environment if the site moves to a custom domain. Set `GOOGLE_SITE_VERIFICATION` to the HTML-tag token from Search Console if using URL-prefix verification. The app generates `/sitemap.xml` and `/robots.txt`, and includes the supplied school photos in its image sitemap.
+
+After deployment, verify the production domain in Google Search Console and submit `/sitemap.xml`. Sitemap submission helps Google discover URLs, but does not guarantee indexing or rankings.
+
 ## Requirements
 
 - Node.js 20.9 or newer (Node.js 22 is recommended).

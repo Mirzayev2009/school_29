@@ -33,13 +33,13 @@ export default function Home() {
             <div className="hero-head">
               <h1 id="hero-title">
                 <span className="hero-title-line">
-                  <span>Katta orzular</span>
+                  <span>Samarqandda</span>
                 </span>
                 <span className="hero-title-line">
-                  <span>shu yerdan</span>
+                  <span>29-maktab</span>
                 </span>
                 <span className="hero-title-line">
-                  <span>boshlanadi.</span>
+                  <span>bilan tanishing.</span>
                 </span>
               </h1>
               <div className="hero-description">
