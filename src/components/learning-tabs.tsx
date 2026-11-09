@@ -89,8 +89,8 @@ export function LearningTabs() {
       </div>
       <div className="learning-photo photo-frame">
         <Image
-          src="/images/demo/reading.webp"
-          alt="Kitoblar ustidagi olma va o‘quv anjomlari"
+          src="/images/school/classroom-1.png"
+          alt="Samarqand shahar 29-maktabining sinf xonasi"
           fill
           sizes="(max-width: 800px) 90vw, 45vw"
         />

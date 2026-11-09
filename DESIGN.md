@@ -114,7 +114,7 @@ components:
 
 Warm paper, forest-green ink, expressive serif headings, and substantial school-life photography create an approachable editorial identity. The page feels open and human: photographs carry the atmosphere, while clear Uzbek copy and restrained controls help visitors explore.
 
-The implementation is flat and spacious. Alternating paper and forest surfaces establish rhythm without floating panels or decorative effects. The identity follows the user's approved ivory, green, serif, and photography direction. The displayed school name, people, figures, events, location, and photographs remain demo material; they are not evidence of a real school's identity or achievements.
+The implementation is flat and spacious. Alternating paper and forest surfaces establish rhythm without floating panels or decorative effects. The identity follows the user's approved ivory, green, serif, and photography direction. The page uses the Samarqand location, 2,100+ student count, social links, and school photos supplied by the user. Do not add unsupplied school-specific claims.
 
 **Key Characteristics:**
 
@@ -143,7 +143,7 @@ The palette combines warm paper with deep botanical greens; straw is a small sup
 - **Warm Paper:** Main page ground, light buttons, and the modal surface.
 - **Deep Paper:** Alternating school-life and gallery grounds; unloaded photo frames and icon-button hover state.
 - **Soft White:** Light-button hover and selected learning tabs.
-- **Muted Green Ink:** Secondary copy and demo disclosures on paper. Keep the shipped higher-contrast value from the frontmatter.
+- **Muted Green Ink:** Secondary copy on paper. Keep the shipped higher-contrast value from the frontmatter.
 - **On Green / Muted On Green:** Main and secondary text on forest surfaces.
 - **Paper Rule / Green Rule:** Fine separators on the corresponding light and dark surfaces.
 
@@ -163,8 +163,8 @@ The palette combines warm paper with deep botanical greens; straw is a small sup
 - **Headline:** Section headings use the frontmatter headline role. At 650px and below they use `clamp(36px, 9vw, 46px)` with a 1.13 line-height. The contact heading is intentionally larger: `clamp(52px, 6vw, 88px)`, changing to `clamp(48px, 13vw, 64px)` on mobile.
 - **Title:** Manrope article titles use the title role; highlights use 25px. Mobile article types have individual 20–24px sizes.
 - **Body:** Reading copy uses 16px. Supporting paragraphs usually have a 1.8–1.85 line-height; the about lead uses 22px, reducing to 19px at 900px and becoming 20px on mobile. Copy widths are constrained by context, commonly 320–460px.
-- **Control / Label:** Actions use 14px, with 13px mobile variants. Navigation, staff roles, demo notes, and footer text use 13px; informational notes use regular weight. There is no separate mono face or uppercase label convention.
-- **Statistics:** Bodoni Moda numerals use 56px, then 38px at 650px and 34px at 370px. Labels remain Manrope.
+- **Control / Label:** Actions use 14px, with 13px mobile variants. Navigation, photo captions, and footer text use 13px; informational notes use regular weight. There is no separate mono face or uppercase label convention.
+- **School figure:** The supplied 2,100+ student count uses Bodoni Moda at 56px, then 38px at 650px and 34px at 370px. Its label uses Manrope.
 
 **The Editorial Pairing Rule.** Serif type belongs to major headings, school figures, and the footer motto; reading text and interactive labels use Manrope.
 
@@ -172,13 +172,13 @@ The palette combines warm paper with deep botanical greens; straw is a small sup
 
 The shared content container is `min(1280px, calc(100% - gutter * 2))`, centered with a fluid gutter. Section spacing is fluid; a compact header remains sticky above anchor navigation. The default header height is 88px, reducing to 76px at 650px. Anchor scroll padding includes the header plus 16px.
 
-Section introductions use an asymmetric two-column composition with the supporting copy aligned to the lower right. The full-viewport hero uses a cover photograph from edge to edge, including behind the opening navigation. A dark green-tinted scrim supports light headings, copy, and a paper-colored action. Its height is at least 100svh and may grow to fit content. The about, learning, and contact sections each retain their own editorial proportions rather than one repeated grid. Team and activities use three columns; highlights use two; gallery uses three with tighter gaps. Repeated spacing comes from the frontmatter scale. Photo edges align with surrounding content, and article text sits directly on the section ground.
+Section introductions use an asymmetric two-column composition with the supporting copy aligned to the lower right. The full-viewport hero uses the supplied building photograph from edge to edge, including behind the opening navigation. A dark green-tinted scrim supports light headings, copy, and a paper-colored action. Its height is at least 100svh and may grow to fit content. The about, learning, and contact sections each retain their own editorial proportions rather than one repeated grid. Activities use three columns; highlights use two; gallery uses three with tighter gaps. Repeated spacing comes from the frontmatter scale. Photo edges align with surrounding content, and article text sits directly on the section ground.
 
 - **At 1600px and above:** Hero content has more top space; the background photograph continues to cover the complete hero.
 - **At 1100px and below:** Header spacing and display size tighten; three-column article gaps become 24px.
 - **At 900px and below:** Desktop navigation yields to a menu button and an in-flow mobile link list. Two-column sections remain; their gaps tighten. Learning-tab grade ranges move to a second row. The footer motto hides.
-- **At 650px and below:** Section introductions, hero, about, learning, highlights, activities, and contact stack into one column. Team becomes a vertical list of photo-and-caption pairs. Statistics retain three columns. Gallery uses two columns, with its first and sixth photos spanning the width. Section spacing becomes 80px; the about section starts at 72px.
-- **At 370px and below:** Gutters become 20px, the book mark hides, the demo status moves below the action, and learning subjects become one column.
+- **At 650px and below:** Section introductions, hero, about, learning, highlights, activities, and contact stack into one column. The student count remains a single column. Gallery uses two columns, with its first and sixth photos spanning the width. Section spacing becomes 80px; the about section starts at 72px.
+- **At 370px and below:** Gutters become 20px, the book mark hides, and learning subjects become one column.
 
 ## Elevation & Depth
 
@@ -188,7 +188,7 @@ There are no box shadows. Tonal surfaces, photography, and one-pixel rules estab
 
 ## Shapes
 
-Photographs and editorial containers are rectangular with square corners. Buttons, menu controls, gallery launch controls, and icon buttons share the small control radius from the frontmatter. Dots are limited to the small demo-status marker and subject-list markers. Borders are fine rules rather than thick outlines. Icons are inline SVG line drawings.
+Photographs and editorial containers are rectangular with square corners. Buttons, menu controls, gallery launch controls, and icon buttons share the small control radius from the frontmatter. Subject-list markers are the only dots. Borders are fine rules rather than thick outlines. Icons are inline SVG line drawings.
 
 The hero title has a temporary animation mask; it returns to visible overflow after the introductory sequence so the serif letterforms remain intact. Photo frames keep their overflow clipped for image cropping and hover scale.
 
@@ -206,7 +206,7 @@ Confident, compact actions with clear text and a small SVG arrow.
 
 ### Editorial articles and photography
 
-Open photo-and-caption groups sit directly on the page ground, without card borders, shadows, or surrounding panel padding. Staff portraits use a 4:4.5 aspect ratio on desktop; activities use 4:3; highlights use 1.75. Mobile crops change to fit the reading flow. Images use cover cropping, with per-person focal positions where supplied. The modal image uses contain sizing so the complete photo is visible.
+Open photo-and-caption groups sit directly on the page ground, without card borders, shadows, or surrounding panel padding. Activities use 4:3; highlights use 1.75. Mobile crops change to fit the reading flow. Images use cover cropping. The modal image uses contain sizing so the complete photo is visible.
 
 ### Navigation
 
@@ -226,9 +226,9 @@ The introductory GSAP timeline uses `expo.out`: title lines rise into place (1.1
 
 The shared CSS ease is `cubic-bezier(0.2, 0.8, 0.2, 1)`. With reduced motion enabled, GSAP intro, arrow, and panel movement are skipped; smooth anchor scrolling becomes immediate, and CSS animation/transition durations reduce to 0.01ms.
 
-### Demo material
+### Supplied school material
 
-Replaceable content lives in `src/lib/school-data.ts`; photographs live in `public/images/demo`. Keep the visible demo status, staff/statistic disclosures, demo contact disclosure, and footer disclosure until real material replaces the corresponding examples. At the user’s request, the contact section displays a complete example street address, house number, district and postal code, plus a sample phone number, Telegram handle, and Instagram handle. The phone uses a tel link; social profiles open in a new tab. A visible note identifies all of these as demo details, not verified school contacts. The map searches the complete sample address. There is no contact submission form or fabricated admission action. The layout metadata currently prevents search indexing while the demo is provisional.
+Replaceable content lives in `src/lib/school-data.ts`; cropped user-provided photographs live in `public/images/school`. The supplied facts are Samarqand city, Buyuk Ipak Yo‘li 44, more than 2,100 students, Telegram `@samarkand29maktab`, and Instagram `@29maktab_official`. The contact area shows the address and links to those social profiles; the map searches the supplied address. The footer shows the school name and region. No phone number, opening hours, admissions process, staff identities, school history, or achievements have been supplied, so the page does not invent them. Search indexing is enabled.
 
 ## Do's and Don'ts
 
@@ -238,19 +238,19 @@ Replaceable content lives in `src/lib/school-data.ts`; photographs live in `publ
 - **Do** use Bodoni Moda for major headings and Manrope for reading and controls.
 - **Do** preserve open photo-and-caption groups, aligned edges, and generous section space.
 - **Do** preserve keyboard access, visible focus, dialog focus return, and reduced-motion support.
-- **Do** keep demo people, figures, photos, and location visibly identified until replaced with verified school material.
+- **Do** use the supplied address, student count, social links, and photos as the source of school-specific content.
 
 ### Don't:
 
 - **Don't** replace rectangular photography with a repeated grid of rounded floating panels.
 - **Don't** add decorative shadows to the flat section and article system.
-- **Don't** treat sample school details or stock photography as verified school facts.
+- **Don't** invent school-specific dates, staff identities, phone numbers, programs, or achievements.
 - **Don't** leave the hero's temporary animation mask clipping the completed heading.
 
 ## Full-background hero
 
-The user explicitly requested photography across every part of the opening hero. Its preloaded Next.js image is an absolute cover layer, with responsive focal cropping and a static contrast scrim. The masthead overlaps the top of the image; desktop copy keeps its asymmetric two-column composition, while phone copy stacks. The existing GSAP scale settle never hides the photograph, and reduced motion leaves the final scene visible. Keep this full-image treatment for future hero refinements.
+The user specified the third attached photo, showing the school building, as the hero background. Its preloaded Next.js image is an absolute cover layer, with responsive focal cropping and a static contrast scrim. The masthead overlaps the top of the image; desktop copy keeps its asymmetric two-column composition, while phone copy stacks. The existing GSAP scale settle never hides the photograph, and reduced motion leaves the final scene visible. Keep this full-image treatment for future hero refinements.
 
 ### Contact details
 
-The contact section keeps its two-column forest layout: a clearly formatted street address and map action on the left, and three ruled contact links on the right. Each link pairs a 13px field label with a 20px value and the shared arrow. On phones the groups stack. Contact values wrap naturally, keep a visible focus state, and link directly to telephone, Telegram, and Instagram destinations. The demo disclosure follows the contact rows.
+The contact section keeps its two-column forest layout: a clearly formatted street address and map action on the left, and ruled Telegram and Instagram links on the right. Each link pairs a 13px field label with a 20px value and the shared arrow. On phones the groups stack. Contact values wrap naturally, keep a visible focus state, and open the supplied social profiles in a new tab.

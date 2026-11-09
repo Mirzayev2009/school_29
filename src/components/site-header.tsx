@@ -101,10 +101,6 @@ export function SiteHeader() {
             <ArrowUpRightIcon />
           </a>
         ))}
-        <a href="#jamoa" onClick={() => setOpen(false)}>
-          Bizning ustozlar
-          <ArrowUpRightIcon />
-        </a>
       </nav>
     </header>
   );

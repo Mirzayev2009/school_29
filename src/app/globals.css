@@ -133,9 +133,6 @@ p {
   color: var(--muted);
   line-height: 1.8;
 }
-.section-head .data-note {
-  margin-top: 12px;
-}
 .photo-frame {
   position: relative;
   overflow: hidden;
@@ -416,20 +413,6 @@ p {
   line-height: 1.85;
   margin-bottom: 28px;
 }
-.demo-label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  margin-top: 20px;
-  color: var(--on-green);
-}
-.demo-label > span {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--straw);
-}
 .hero-photo {
   position: absolute;
   inset: 0;
@@ -489,8 +472,7 @@ p {
 }
 .school-stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: minmax(0, 360px);
   padding-top: 48px;
   margin-top: 48px;
   border-top: 1px solid var(--rule);
@@ -510,15 +492,6 @@ p {
   font-size: 14px;
   margin-top: 8px;
 }
-.data-note {
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.6;
-}
-.about-section > .container > .data-note {
-  margin-top: 20px;
-}
-
 .learning-section {
   background: var(--forest);
   color: var(--on-green);
@@ -611,22 +584,6 @@ p {
   object-position: 50% 35%;
 }
 
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
-}
-.teacher-photo {
-  aspect-ratio: 4 / 4.5;
-}
-.teacher-description {
-  padding-top: 24px;
-}
-.teacher-description p {
-  font-size: 13px;
-  color: var(--muted);
-  margin-top: 6px;
-}
 .life-section {
   background: var(--paper-deep);
 }
@@ -864,16 +821,6 @@ p {
 .contact-link:hover .contact-link-value {
   text-decoration: underline;
 }
-.contact-note .contact-demo-note {
-  margin-top: 24px;
-  font-size: 13px;
-  line-height: 1.7;
-}
-.contact-note p {
-  color: var(--on-green-muted);
-  font-size: 16px;
-  line-height: 1.85;
-}
 .contact-note .text-link {
   margin-top: 24px;
   text-decoration-color: #52705c;
@@ -961,7 +908,6 @@ p {
     font-size: 16px;
     gap: 12px;
   }
-  .team-grid,
   .activity-grid {
     gap: 24px;
   }
@@ -998,9 +944,6 @@ p {
   .hero-description p {
     margin-bottom: 20px;
   }
-  .demo-label {
-    margin-top: 16px;
-  }
   .about-layout {
     gap: 6%;
     grid-template-columns: 1fr 1fr;
@@ -1035,9 +978,6 @@ p {
   }
   .learning-panel ul {
     grid-template-columns: 1fr;
-  }
-  .teacher-description h3 {
-    font-size: 17px;
   }
   .activity h3 {
     font-size: 18px;
@@ -1151,11 +1091,6 @@ p {
     padding-inline: 20px;
     min-height: 48px;
   }
-  .demo-label {
-    display: inline-flex;
-    margin: 0 0 0 16px;
-    font-size: 13px;
-  }
   .hero-photo img {
     object-position: 53% 50%;
   }
@@ -1205,7 +1140,6 @@ p {
     aspect-ratio: 1.2;
   }
   .school-stats {
-    gap: 16px;
     padding-top: 32px;
     margin-top: 32px;
   }
@@ -1216,9 +1150,6 @@ p {
     font-size: 13px;
     max-width: 100px;
     line-height: 1.6;
-  }
-  .data-note {
-    font-size: 13px;
   }
   .learning-layout {
     grid-template-columns: 1fr;
@@ -1255,28 +1186,6 @@ p {
   .learning-photo {
     min-height: 0;
     aspect-ratio: 1.1;
-  }
-  .team-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .teacher {
-    display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    align-items: end;
-    gap: 24px;
-  }
-  .teacher-photo {
-    aspect-ratio: 0.8;
-  }
-  .teacher-description {
-    padding: 0 0 12px;
-  }
-  .teacher-description h3 {
-    font-size: 20px;
-  }
-  .teacher-description p {
-    font-size: 13px;
   }
   .activity-grid {
     grid-template-columns: 1fr;
@@ -1386,10 +1295,6 @@ p {
   }
   .school-mark > svg {
     display: none;
-  }
-  .demo-label {
-    margin: 12px 0 0;
-    display: flex;
   }
   .hero h1 {
     font-size: 46px;

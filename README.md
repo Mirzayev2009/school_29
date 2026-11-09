@@ -2,15 +2,15 @@
 
 A single-page school website in Uzbek, built with Next.js, TypeScript, Tailwind CSS, and GSAP.
 
-## Demo content
+## School content
 
-The page has eight sections: welcome, about, learning, team, school life, highlights, gallery, and contact. It includes keyboard-accessible learning tabs, a photo lightbox, mobile navigation, and reduced-motion support.
+The page introduces Samarqand shahar 29-maktabi in seven sections: welcome, about, learning, school life, highlights, gallery, and contact. It includes keyboard-accessible learning tabs, a photo lightbox, mobile navigation, and reduced-motion support. The teacher section has been removed.
 
-Replace school details, sample statistics, staff, activities, highlights, and gallery entries in `src/lib/school-data.ts`. Photographs are in `public/images/demo/`; their stock sources are recorded in `scripts/demo-image-sources.json` and image provenance sidecars. The gallery and staff portraits are illustrative and do not depict the real school.
+School details and captions live in `src/lib/school-data.ts`. The page currently uses the address Buyuk Ipak Yo‘li 44 in Samarqand, the supplied count of 2,100+ students, Telegram `@samarkand29maktab`, and Instagram `@29maktab_official`. The nine user-provided school photographs are cropped to remove black bars and stored in `public/images/school/`; `school-building.png` is the hero background.
 
-The hero and section introductions are in `src/app/page.tsx`. Shared colors, typography, and responsive styles are in `src/app/globals.css`.
+The exact official long-form school name, phone number, office hours, admissions information, school history, specialized programs, leadership, achievements, and official logo have not been provided. Add only confirmed details. The hero and section introductions are in `src/app/page.tsx`; shared colors, typography, and responsive styles are in `src/app/globals.css`.
 
-The user requested specific example contact details: a complete Tashkent street address, a sample phone number, and Telegram/Instagram handles. These are explicitly labeled as demo data, and their destinations are not verified school contacts. The map searches the full example address. Replace these details with the school's confirmed contacts before launch. Search indexing is disabled in `src/app/layout.tsx` while the page contains demo data.
+Search indexing is enabled in `src/app/layout.tsx`.
 
 ## Requirements
 

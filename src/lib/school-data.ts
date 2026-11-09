@@ -1,47 +1,34 @@
-/** Replace this demo content and the stock images with the school's real material. */
+/** School details and photos supplied for the Samarqand shahar 29-maktab site. */
 export const school = {
   name: "29-maktab",
-  fullName: "29-sonli umumta’lim maktabi",
-  description: "Bilim, do‘stlik va yangi kashfiyotlar maskani.",
-  demo: true,
-  location: "Toshkent shahri",
+  fullName: "Samarqand shahar 29-maktabi",
+  description: "Ta’lim va maktab hayotidan lavhalar.",
+  location: "Samarqand shahri",
   address: {
-    street: "Amir Temur shohko‘chasi, 29-uy",
-    district: "Yunusobod tumani",
-    postalCode: "100084",
+    street: "Buyuk Ipak Yo‘li, 44",
+    region: "Samarqand viloyati, O‘zbekiston",
   },
   mapUrl:
     "https://www.openstreetmap.org/search?query=" +
     encodeURIComponent(
-      "Amir Temur shohko‘chasi 29, Yunusobod tumani, Toshkent, 100084",
+      "Buyuk Ipak Yo‘li 44, Samarqand shahri, Samarqand viloyati, Uzbekistan",
     ),
+  heroImage: "/images/school/school-building.png",
   contacts: [
     {
-      label: "Telefon",
-      value: "+998 (71) 000-00-29",
-      href: "tel:+998710000029",
-      external: false,
-    },
-    {
       label: "Telegram",
-      value: "@maktab29_demo",
-      href: "https://t.me/maktab29_demo",
+      value: "@samarkand29maktab",
+      href: "https://t.me/samarkand29maktab",
       external: true,
     },
     {
       label: "Instagram",
-      value: "@maktab29_demo",
-      href: "https://www.instagram.com/maktab29_demo/",
+      value: "@29maktab_official",
+      href: "https://www.instagram.com/29maktab_official",
       external: true,
     },
   ],
-  contactNote:
-    "Manzil, telefon va ijtimoiy tarmoq hisoblari namuna sifatida keltirilgan.",
-  stats: [
-    { value: "1–11", label: "ta’lim sinflari" },
-    { value: "1 200+", label: "bilimga intiluvchi o‘quvchi" },
-    { value: "72", label: "fidoyi ustoz" },
-  ],
+  stats: [{ value: "2 100+", label: "o‘quvchi" }],
 } as const;
 
 export const navigation = [
@@ -93,94 +80,86 @@ export const learning = [
   },
 ] as const;
 
-export const teachers = [
-  {
-    name: "Dilnoza Karimova",
-    role: "Maktab direktori",
-    image: "/images/demo/teacher-dilnoza.webp",
-    position: "50% 35%",
-  },
-  {
-    name: "Aziz Rahimov",
-    role: "Matematika o‘qituvchisi",
-    image: "/images/demo/teacher-aziz.webp",
-    position: "50% 40%",
-  },
-  {
-    name: "Nargiza Sobirova",
-    role: "Ingliz tili o‘qituvchisi",
-    image: "/images/demo/teacher-nargiza.webp",
-    position: "50% 35%",
-  },
-] as const;
-
 export const activities = [
   {
-    name: "Sport va jamoaviy ruh",
-    description: "Harakat, sog‘lom raqobat va bir-birini qo‘llab-quvvatlash.",
-    image: "/images/demo/sports.webp",
-    alt: "Sport zalidagi basketbol maydoni",
+    name: "Maktab kutubxonasi",
+    description: "Maktab kutubxonasining ichki ko‘rinishi.",
+    image: "/images/school/library.png",
+    alt: "Maktab kutubxonasidagi kitob javonlari",
   },
   {
-    name: "Ijod uchun erkinlik",
-    description: "Ranglar, g‘oyalar va o‘zini yangicha ifodalash imkoniyati.",
-    image: "/images/demo/art.webp",
-    alt: "Rassomlik mashg‘uloti uchun bo‘yoq va mo‘yqalamlar",
+    name: "Musiqa xonasi",
+    description: "Musiqa darsidan olingan surat.",
+    image: "/images/school/music-class-1.png",
+    alt: "O‘quvchilar musiqa xonasida darsda",
   },
   {
-    name: "Kitob bilan do‘stlik",
-    description: "Yangi hikoyalar orqali dunyoni kengroq ko‘rish.",
-    image: "/images/demo/library.webp",
-    alt: "Kitoblar bilan to‘la yorug‘ kutubxona",
+    name: "Sinf xonasi",
+    description: "O‘quvchilar dars jarayonida.",
+    image: "/images/school/classroom-2.png",
+    alt: "O‘quvchilar sinf xonasida darsda",
   },
 ] as const;
 
 export const highlights = [
   {
-    title: "Kichik tadqiqot, katta qiziqish",
-    description:
-      "O‘quvchilar tayyorlagan tajribalar va ilmiy loyihalar ko‘rgazmasi.",
-    image: "/images/demo/science.webp",
-    alt: "Ilmiy tajriba uchun laboratoriya jihozlari",
+    title: "Maktab binosi",
+    description: "Samarqand shahar 29-maktabining tashqi ko‘rinishi.",
+    image: "/images/school/school-campus.png",
+    alt: "Maktab binosi va old maydoni",
   },
   {
-    title: "G‘oyalar jamoada ulg‘ayadi",
-    description:
-      "Bilim almashish, savol berish va yangi yechimlarni birgalikda topish.",
-    image: "/images/demo/students.webp",
-    alt: "Birgalikda bilim olayotgan o‘quvchilar",
+    title: "Dars jarayonidan",
+    description: "O‘quvchilar sinf xonasida darsda.",
+    image: "/images/school/classroom-1.png",
+    alt: "O‘quvchilar sinf xonasida o‘tiribdi",
   },
 ] as const;
 
 export const gallery = [
   {
-    src: "/images/demo/classroom.webp",
-    alt: "Darsda o‘qituvchini tinglayotgan o‘quvchilar",
-    label: "Dars jarayonidan",
+    src: "/images/school/school-gate.png",
+    alt: "29-maktab yozuvi tushirilgan kirish darvozasi",
+    label: "Maktab darvozasi",
   },
   {
-    src: "/images/demo/campus.webp",
-    alt: "Partalar va doska joylashgan sinfxona",
-    label: "Maktab muhiti",
+    src: "/images/school/school-campus.png",
+    alt: "Maktab binosi va old maydoni",
+    label: "Maktab binosi",
   },
   {
-    src: "/images/demo/reading.webp",
-    alt: "Kitob o‘qish va mustaqil o‘rganish",
-    label: "Kitobxonlik",
+    src: "/images/school/school-building.png",
+    alt: "Maktab binosining old ko‘rinishi",
+    label: "Maktab hovlisi",
   },
   {
-    src: "/images/demo/science.webp",
-    alt: "Laboratoriyadagi ilmiy jihozlar",
-    label: "Fan va tajriba",
+    src: "/images/school/classroom-1.png",
+    alt: "O‘quvchilar sinf xonasida o‘tiribdi",
+    label: "Sinf xonasi",
   },
   {
-    src: "/images/demo/art.webp",
-    alt: "Ijodiy mashg‘ulot uchun rangli bo‘yoqlar",
-    label: "Ijodiy mashg‘ulotlar",
+    src: "/images/school/classroom-2.png",
+    alt: "O‘quvchilar dars jarayonida",
+    label: "Dars jarayoni",
   },
   {
-    src: "/images/demo/sports.webp",
-    alt: "Basketbol maydoni",
-    label: "Sport va harakat",
+    src: "/images/school/library.png",
+    alt: "Maktab kutubxonasidagi kitob javonlari",
+    label: "Maktab kutubxonasi",
+  },
+  {
+    src: "/images/school/music-class-1.png",
+    alt: "O‘quvchilar musiqa xonasida darsda",
+    label: "Musiqa xonasi",
+  },
+  {
+    src: "/images/school/music-class-2.png",
+    alt: "Musiqa xonasidagi o‘quvchilar va cholg‘u asboblari",
+    label: "Musiqa darsi",
+  },
+  {
+    src: "/images/school/classroom-3.png",
+    alt: "O‘quvchilar partalarda sinfda o‘tiribdi",
+    label: "Sinfdagi o‘quvchilar",
   },
 ] as const;

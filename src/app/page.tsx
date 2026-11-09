@@ -9,7 +9,6 @@ import {
   highlights,
   navigation,
   school,
-  teachers,
 } from "@/lib/school-data";
 
 export default function Home() {
@@ -23,8 +22,8 @@ export default function Home() {
         <section className="hero" id="bosh-sahifa" aria-labelledby="hero-title">
           <div className="hero-photo photo-frame">
             <Image
-              src="/images/demo/classroom.webp"
-              alt="Yorug‘ sinfxonada ustoz bilan dars o‘tayotgan o‘quvchilar — namunaviy surat"
+              src={school.heroImage}
+              alt="Samarqand shahar 29-maktabining binosi"
               fill
               sizes="100vw"
               preload
@@ -45,15 +44,11 @@ export default function Home() {
               </h1>
               <div className="hero-description">
                 <p>
-                  {school.name} — {school.description} Har bir bolaning
-                  qobiliyatini birga rivojlantiramiz.
+                  {school.fullName}. {school.description}
                 </p>
                 <a className="button button-light" href="#maktab">
-                  Maktab bilan tanishing <ArrowUpRightIcon />
+                  Maktab haqida <ArrowUpRightIcon />
                 </a>
-                <span className="demo-label">
-                  <span /> Demo ko‘rinish
-                </span>
               </div>
             </div>
             <div className="hero-bottom">
@@ -73,34 +68,33 @@ export default function Home() {
           <div className="container">
             <div className="section-head">
               <h2 id="about-title">
-                Maktabdan ham
+                Samarqanddagi
                 <br />
-                ko‘proq — bir jamoa.
+                29-maktab.
               </h2>
               <p>
-                Bir-birini qo‘llaydigan ustozlar, qiziquvchan o‘quvchilar va
-                farzandining kelajagiga befarq bo‘lmagan ota-onalar.
+                Maktab manzili, o‘quvchilar soni va maktab muhitidan olingan
+                suratlar.
               </p>
             </div>
             <div className="about-layout">
               <div className="about-copy">
                 <p className="large-copy">
-                  Har bir o‘quvchi o‘zini erkin his qiladigan, savol berishdan
-                  qo‘rqmaydigan va yangi narsalarni sinab ko‘radigan muhit.
+                  Maktab {school.address.street} manzilida joylashgan. Unda
+                  2 100 dan ortiq o‘quvchi ta’lim oladi.
                 </p>
                 <p>
-                  Biz uchun ta’lim faqat darslik bilan cheklanmaydi. Bilim
-                  olish, do‘st topish va o‘ziga ishonchni kashf etish ham maktab
-                  hayotining bir qismi.
+                  Maktab binosi, sinf xonalari, kutubxona va dars jarayonidan
+                  olingan suratlarni ko‘ring.
                 </p>
-                <a className="text-link" href="#jamoa">
-                  Ustozlar bilan tanishing <ArrowUpRightIcon />
+                <a className="text-link" href="#galereya">
+                  Maktab suratlarini ko‘ring <ArrowUpRightIcon />
                 </a>
               </div>
               <div className="about-photo photo-frame">
                 <Image
-                  src="/images/demo/campus.webp"
-                  alt="Partalar va doska joylashgan yorug‘ sinfxona — namunaviy surat"
+                  src="/images/school/school-campus.png"
+                  alt="Samarqand shahar 29-maktabining binosi va old maydoni"
                   fill
                   sizes="(max-width: 800px) 90vw, 50vw"
                 />
@@ -114,7 +108,6 @@ export default function Home() {
                 </div>
               ))}
             </dl>
-            <p className="data-note">Raqamlar namuna sifatida keltirilgan.</p>
           </div>
         </section>
 
@@ -136,50 +129,6 @@ export default function Home() {
               </p>
             </div>
             <LearningTabs />
-          </div>
-        </section>
-
-        <section
-          id="jamoa"
-          className="section team-section"
-          aria-labelledby="team-title"
-        >
-          <div className="container">
-            <div className="section-head">
-              <h2 id="team-title">
-                Bilim beradigan.
-                <br />
-                Ishonch uyg‘otadigan.
-              </h2>
-              <div>
-                <p>
-                  Yaxshi ustoz fanni o‘rgatadi va o‘quvchisining imkoniyatini
-                  ko‘ra oladi.
-                </p>
-                <p className="data-note">
-                  Jamoa a’zolarining ismlari va suratlari namunaviy.
-                </p>
-              </div>
-            </div>
-            <div className="team-grid">
-              {teachers.map((teacher) => (
-                <article className="teacher" key={teacher.name}>
-                  <div className="teacher-photo photo-frame">
-                    <Image
-                      src={teacher.image}
-                      alt={`${teacher.role} uchun namunaviy portret`}
-                      fill
-                      sizes="(max-width: 600px) 90vw, 30vw"
-                      style={{ objectPosition: teacher.position }}
-                    />
-                  </div>
-                  <div className="teacher-description">
-                    <h3>{teacher.name}</h3>
-                    <p>{teacher.role}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
           </div>
         </section>
 
@@ -308,7 +257,7 @@ export default function Home() {
                   <address className="school-address">
                     {school.address.street}
                     <br />
-                    {school.address.district}, {school.address.postalCode}
+                    {school.address.region}
                   </address>
                 </div>
                 <a
@@ -338,7 +287,6 @@ export default function Home() {
                     </a>
                   ))}
                 </div>
-                <p className="contact-demo-note">{school.contactNote}</p>
                 <a className="text-link" href="#bosh-sahifa">
                   Sahifa boshiga qaytish <ArrowUpRightIcon />
                 </a>
@@ -371,15 +319,8 @@ export default function Home() {
             </span>
           </div>
           <div className="footer-bottom">
-            <p>© 2026 {school.name}. Namuna sahifa.</p>
-            <p>Matnlar, ismlar, raqamlar va suratlar — demo.</p>
-            <a
-              href="https://unsplash.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Suratlar: Unsplash <ArrowUpRightIcon />
-            </a>
+            <p>© 2026 {school.fullName}.</p>
+            <p>{school.address.region}</p>
           </div>
         </div>
       </footer>

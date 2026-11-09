@@ -15,10 +15,10 @@ const displayFont = Bodoni_Moda({
 });
 
 export const metadata: Metadata = {
-  title: "29-maktab — Bilim bilan kelajak sari",
+  title: "Samarqand shahar 29-maktabi",
   description:
-    "29-maktab bilan tanishing: ta’lim, ustozlar va maktab hayoti. Uzbek tilidagi namunaviy landing sahifa.",
-  robots: { index: false, follow: false },
+    "Samarqand shahar 29-maktabi. Buyuk Ipak Yo‘li 44. Maktabda 2 100 dan ortiq o‘quvchi ta’lim oladi.",
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

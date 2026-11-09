@@ -8,14 +8,14 @@ web
 
 ## Product Purpose
 
-A simple school introduction on one scrolling landing page. The user is the school's IT coordinator. The accepted structure is welcome, about, learning, team, school life, highlights, gallery, and contact/location.
+A simple introduction to Samarqand shahar 29-maktabi on one scrolling landing page. The user is the school's IT coordinator. The page covers welcome, about, learning, school life, highlights, gallery, and contact/location. It does not include a teacher section.
 
 ## Capabilities and Constraints
 
 - Next.js with TypeScript and App Router, already initialized in this repository.
 - One landing page; no platform, accounts, dashboard, CMS, or extra content routes.
-- Uzbek is the confirmed demo language.
-- Demo content and demo photographs are authorized. The user will supply real school data later.
+- Uzbek is the confirmed site language.
+- School details and nine photographs supplied by the user are used as the site's real material.
 - Keep content easy to replace in a single data module.
 - GSAP is the confirmed animation library.
 - UI/UX Pro Max, Impeccable, and Taste are requested design skills.
@@ -23,15 +23,15 @@ A simple school introduction on one scrolling landing page. The user is the scho
 
 ## Brand Commitments
 
-The user approved warm ivory, forest green, expressive serif headings, and school-life photography for the demo. The project name suggests School 29; the displayed name is provisional demo content.
+The user approved warm ivory, forest green, expressive serif headings, and school-life photography. The project is for School 29 in Samarqand.
 
 The hero must use a photograph across its entire opening background, including behind the navigation, as explicitly requested by the user.
 
-The user explicitly requested a specific example street address (including house number and postal code), phone number, Telegram account, and Instagram account. These examples are authorized demo content and are visibly identified as such; none is a verified school contact.
+The user supplied the address Buyuk Ipak Yo‘li 44, Samarqand city, Samarqand region; a student count of 2,100+; Telegram `@samarkand29maktab`; Instagram `@29maktab_official`; and nine school photos. The third attached photo is the hero image. Black bars at the top and bottom of the supplied photos are cropped from the shipped assets.
 
 ## Evidence on Hand
 
-No real school address, contact details, statistics, staff identities, achievements, or photographs have been provided. Demo material must be identified as illustrative. Do not present demo material as verified school facts.
+The exact official long-form school name, phone number, office hours, admission details, school history, special programs, and verified achievements have not been supplied. Do not invent these details.
 
 ## Users
 
